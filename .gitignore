@@ -1,0 +1,11 @@
+首先 我们做了一个项目  首页需要整屏滚动    所以引入了Jquery.fullPage.min.js   但是登录确需要侧边栏弹出  所以用了iframe 
+
+chrome 和Firefox  都是可以很好的结合使用 Ie11  也不错  但是问题来了  本项目还需要兼容Ie7 遇到了两个问题：
+
+1.是在Ie7下 这个iframe  是需要半透明的状态   Ie7下变成全黑了   所以给iframe  添加了 这个属性 allowtransparency="true" 然后就可以透明了 
+
+2.就是这个iframe  不能弹出来   后来发现 把这个Jquery.fullPage.min.js 去掉 就可以用了 
+最后没办法 只能把这个iframe  换成div  弹出来了 
+
+用这个iframe 的 时候Html  不能是position：relative 的  要不然也弹不出来 
+
